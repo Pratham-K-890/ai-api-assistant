@@ -7,14 +7,14 @@ from groq import Groq
 from datetime import datetime
 import uuid
 import json
-from dotenv import load_dotenv
+import os
 
 
-load_dotenv()
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 
 app = FastAPI(lifespan=lifespan)
-client=Groq()
+client=Groq(api_key=GROQ_API_KEY)
 
 
 
