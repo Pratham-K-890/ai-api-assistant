@@ -4,3 +4,5 @@ groq
 python-dotenv
 ddgs
 pydantic
+pytest
+httpx
